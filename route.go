@@ -432,7 +432,7 @@ func (m schemeMatcher) Match(r *http.Request, match *RouteMatch) bool {
 // It accepts a sequence of schemes to be matched, e.g.: "http", "https".
 // If the request's URL has a scheme set, it will be matched against.
 // Generally, the URL scheme will only be set if a previous handler set it,
-// such as the ProxyHeaders handler from gorilla/handlers.
+// such as the ProxyHeaders handler from elasticperch/handlers.
 // If unset, the scheme will be determined based on the request's TLS
 // termination state.
 // The first argument to Schemes will be used when constructing a route URL.
